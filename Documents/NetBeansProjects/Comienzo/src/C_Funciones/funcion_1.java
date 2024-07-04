@@ -10,9 +10,14 @@ package C_Funciones;
  */
 public class funcion_1 {
     public static void main(String[] args) {
-        saludar();
+        sumar(20, 40);
+        saludo("Efrain",22);
     }
-    static void saludar(){
-        System.out.println("Hola Efraín, funciones");
+    static void sumar(int a,int b){
+        int suma=a+b;
+        System.out.println("La suma es: "+suma);
+    }
+    static void saludo(String nombre, int edad){
+        System.out.printf("Mi nombre es %s y tengo %d años",nombre,edad);
     }
 }
