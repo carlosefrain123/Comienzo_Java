@@ -43,5 +43,11 @@ public class Encap1 {
         this.eliminado = eliminado;
     }
     
-    
+    //POO Encapsulamiento
+
+    @Override
+    public String toString() {
+        return "Persona: [Nombre: %s,Edad: %d, Eliminado %b]"
+                .formatted(this.nombre,this.edad,this.eliminado);
+    }
 }
