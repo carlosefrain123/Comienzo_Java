@@ -7,16 +7,16 @@ package G_HAClass;
  *
  * @author USER
  */
-public class Empleado extends Persona{
+public class Empleado1 extends Persona2{
     private int idEmpleado;
     private double sueldo;
     private static int contadorEmpleado;
-            
-    public Empleado(double sueldo, String nombre) {
+
+    public Empleado1(double sueldo, String nombre) {
         super(nombre);
-        this.idEmpleado = ++Empleado.contadorEmpleado;
+        this.idEmpleado = ++Empleado1.contadorEmpleado;
         this.sueldo = sueldo;
-    } 
+    }
 
     public int getIdEmpleado() {
         return idEmpleado;
@@ -39,18 +39,18 @@ public class Empleado extends Persona{
     }
 
     public static void setContadorEmpleado(int contadorEmpleado) {
-        Empleado.contadorEmpleado = contadorEmpleado;
+        Empleado1.contadorEmpleado = contadorEmpleado;
     }
-    //El toString de Persona
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Empleado{");
+        sb.append("Empleado1{");
         sb.append("idEmpleado=").append(idEmpleado);
         sb.append(", sueldo=").append(sueldo);
-        sb.append(", ").append(super.toString());
+        sb.append(", =").append(super.toString());
         sb.append('}');
         return sb.toString();
-    }
+    }   
     
 }
