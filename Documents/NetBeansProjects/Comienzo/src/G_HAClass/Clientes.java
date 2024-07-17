@@ -56,5 +56,10 @@ public class Clientes extends Persona{
         sb.append('}');
         return sb.toString();
     }
+
+    @Override
+    public String obtenerDetalle() {
+        return super.obtenerDetalle()+"Es VIP: "+this.vip; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+    }
     
 }

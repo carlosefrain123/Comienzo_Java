@@ -52,5 +52,10 @@ public class Empleado extends Persona{
         sb.append('}');
         return sb.toString();
     }
+    //Polimorfismo
+    @Override
+    public String obtenerDetalle() {
+        return super.obtenerDetalle()+"sueldo: "+this.sueldo; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+    }
     
 }

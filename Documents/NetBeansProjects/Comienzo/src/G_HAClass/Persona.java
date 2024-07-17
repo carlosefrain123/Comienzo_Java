@@ -27,7 +27,10 @@ public class Persona {
         this.edad = edad;
         this.direccion = direccion;
     }
-
+    //Polimorfismo
+    public String obtenerDetalle(){
+        return "Nombre:%s Edad:%d".formatted(this.nombre,this.edad);
+    }
     public String getNombre() {
         return this.nombre;
     }

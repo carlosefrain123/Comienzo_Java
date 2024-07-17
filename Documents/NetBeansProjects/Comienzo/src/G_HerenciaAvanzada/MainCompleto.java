@@ -11,11 +11,23 @@ import java.util.Date;
  */
 public class MainCompleto {
     public static void main(String[] args) {
+        Persona persona=new Persona("Efrain", 'M', 20, "Chiclayo");
+        imprimer(persona);
+        //
         Empleado empleado1=new Empleado(400, "Efrain");
-        System.out.println(empleado1);
+        imprimer(empleado1);
         //
         var fecha=new Date();
         Clientes clientes1=new Clientes(fecha, true, "Carlos Efraín", 'M', 22, "Monsefú");
-        System.out.println(clientes1);
+        imprimer(clientes1);      
+        //Dowcasting
+        Persona persona1=new Empleado(800, "Jose");
+        Empleado empleado2=(Empleado) persona1;
+        System.out.println(empleado2.obtenerDetalle());
     }
+        //Polimorfismo
+        public static void imprimer(Persona persona){
+            System.out.println(persona.obtenerDetalle());
+        }
+                
 }
