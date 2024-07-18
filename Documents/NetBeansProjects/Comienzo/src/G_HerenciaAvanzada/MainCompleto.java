@@ -25,9 +25,9 @@ public class MainCompleto {
         Empleado empleado2=(Empleado) persona1;
         System.out.println(empleado2.obtenerDetalle());
     }
-        //Polimorfismo
-        public static void imprimer(Persona persona){
-            System.out.println(persona.obtenerDetalle());
-        }
+    //Polimorfismo
+    public static void imprimer(Persona persona){
+        System.out.println(persona.obtenerDetalle());
+    }
                 
 }
