@@ -4,9 +4,11 @@
  */
 package peliculas;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author USER
+ * ArrayList
  */
 public class Main {
 
@@ -14,7 +16,13 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ArrayList<String> meses=new ArrayList<>();
+        meses.add("Enero");
+        meses.add("Febrero");
+        System.out.println(meses);
+        meses.forEach(dato->{
+            System.out.println(dato);
+        });
     }
     
 }
